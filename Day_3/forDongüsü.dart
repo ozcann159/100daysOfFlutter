@@ -5,9 +5,9 @@ void main(List<String> args) {
 
   int total = 0;
   int n = 100;
-
+// 0'dan n'ye kadar olan sayıların toplamını hesaplamak için bir döngü başlatıyoruz.
   for (var i = 0; i <=n; i++) {
-    total = total + i;
+    total = total + i; // Her adımda, total değişkenine i'yi ekleyerek toplamı güncelliyoruz.
   }
   print("Toplam $total");
 
