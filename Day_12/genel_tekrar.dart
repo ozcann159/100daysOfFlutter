@@ -35,12 +35,13 @@ selamVer(var isim){
 topla(var sayi1, var sayi2){
   //toplama
   print(sayi1 + sayi2);
+  f();
 }
 
 f(){
-
+  print("f fonksiyonu çalıştı");
 }
 
 g(){
-
+  print("g fonksiyonu çalıştı");
 }
