@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_full_learn/demos/note_demos_view.dart';
+import 'package:flutter_full_learn/101/list_view_learn.dart';
+import 'package:flutter_full_learn/demos/color_life_cycle_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +13,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
+        progressIndicatorTheme: ProgressIndicatorThemeData(color: Colors.white),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: NoteDemosView(),
+      home: ListViewLearn(),
     );
   }
 }
